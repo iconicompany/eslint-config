@@ -1,4 +1,4 @@
-# @iconicompany/eslint-config-iconic
+# @iconicompany/eslint-config
 
 - Semi quotes
 - Auto fix for formatting
@@ -10,12 +10,12 @@
 
 ### Install
 
-```npm install -D eslint @iconicompany/eslint-config-iconic```
+```npm install -D eslint @iconicompany/eslint-config```
 
 ### Configure eslint.config.js
 
 ```javascript
-import config from "@iconicompany/eslint-config-iconic";
+import config from "@iconicompany/eslint-config";
 
 export default config;
 ```

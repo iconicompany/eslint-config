@@ -1,5 +1,5 @@
 {
-  "name": "@iconicompany/eslint-config-iconic",
+  "name": "@iconicompany/eslint-config",
   "version": "1.0.0",
   "description": "ESLint configuration by iconicompany",
   "type": "module",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iconicompany/eslint-config-iconic.git"
+    "url": "git+https://github.com/iconicompany/eslint-config.git"
   },
   "keywords": [
     "eslint"
@@ -21,9 +21,9 @@
   "author": "MaximumQuiet",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/iconicompany/eslint-config-iconic/issues"
+    "url": "https://github.com/iconicompany/eslint-config/issues"
   },
-  "homepage": "https://github.com/iconicompany/eslint-config-iconic#readme",
+  "homepage": "https://github.com/iconicompany/eslint-config#readme",
   "devDependencies": {
     "eslint": "^8.39.0",
     "eslint-config-eslint": "^8.0.0"
