@@ -1,0 +1,38 @@
+{
+  "name": "@iconicompany/eslint-config-iconic",
+  "version": "1.0.0",
+  "description": "ESLint configuration by iconicompany",
+  "type": "module",
+  "exports": {
+    ".": "./eslint.config.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint -c eslint.config.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iconicompany/eslint-config-iconic.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "MaximumQuiet",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/iconicompany/eslint-config-iconic/issues"
+  },
+  "homepage": "https://github.com/iconicompany/eslint-config-iconic#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-eslint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "@eslint/js": ">= 8",
+    "eslint": ">= 8",
+    "eslint-plugin-big-number-rules": "^2.2.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0"
+  }
+}
