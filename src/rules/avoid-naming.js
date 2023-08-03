@@ -1,7 +1,7 @@
 export default {
   meta: {
     messages: {
-      avoidName: "Avoid using variables named '{{ name }}'"
+      avoidName: "Avoid using variables named '{{ name }}'",
     },
     schema: [
       {
@@ -10,12 +10,12 @@ export default {
           toAvoid: {
             type: "array",
             items: {
-              type: "string"
-            }
-          }
-        }
-      }
-    ]
+              type: "string",
+            },
+          },
+        },
+      },
+    ],
   },
   create(context) {
     const [options] = context.options;
@@ -28,11 +28,11 @@ export default {
             messageId: "avoidName",
             // eslint-disable-next-line iconicompany/avoid-naming -- eslint variables format
             data: {
-              name: "data"
-            }
+              name: "data",
+            },
           });
         }
-      }
+      },
     };
-  }
+  },
 };

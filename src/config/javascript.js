@@ -13,11 +13,11 @@ export default [
     files: ["**/*.{js,mjs,cjs,jsx}"],
     languageOptions: {
       ecmaVersion: ECMA_VERSION,
-      sourceType: "module"
+      sourceType: "module",
     },
     plugins: {
       iconicompany: rules,
-      "simple-import-sort": simpleImportSort
+      "simple-import-sort": simpleImportSort,
     },
     rules: {
       "no-console": "off",
@@ -25,6 +25,7 @@ export default [
       "prefer-arrow-callback": "warn",
       "no-tabs": ["error", { allowIndentationTabs: true }],
       indent: ["error", 2, { SwitchCase: 1 }],
+      "comma-dangle": ["error", "always-multiline"],
       "lines-around-comment": "off",
       "func-style": ["error", "declaration", { allowArrowFunctions: true }],
       "no-restricted-syntax": [
@@ -32,8 +33,8 @@ export default [
         {
           selector:
             "CallExpression[callee.object.name='console'][callee.property.name!=/^(error|trace)$/]",
-          message: "Unexpected property on console object was called"
-        }
+          message: "Unexpected property on console object was called",
+        },
       ],
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
@@ -41,9 +42,9 @@ export default [
       "iconicompany/avoid-naming": [
         "warn",
         {
-          toAvoid: ["data"]
-        }
-      ]
-    }
-  }
+          toAvoid: ["data"],
+        },
+      ],
+    },
+  },
 ];

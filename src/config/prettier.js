@@ -4,7 +4,7 @@ export default [
   {
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.mjs"],
     plugins: {
-      prettier
+      prettier,
     },
     rules: {
       "arrow-body-style": "warn",
@@ -21,9 +21,9 @@ export default [
           singleQuote: false,
           trailingComma: "none",
           usePrettierrc: false,
-          arrowParens: "avoid"
-        }
-      ]
-    }
-  }
+          arrowParens: "avoid",
+        },
+      ],
+    },
+  },
 ];
