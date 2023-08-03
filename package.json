@@ -1,6 +1,6 @@
 {
   "name": "@iconicompany/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint configuration by iconicompany",
   "type": "module",
   "exports": {
@@ -25,15 +25,17 @@
     "url": "https://github.com/iconicompany/eslint-config/issues"
   },
   "homepage": "https://github.com/iconicompany/eslint-config#readme",
-  "devDependencies": {
-    "eslint": "^8.39.0",
-    "eslint-config-eslint": "^8.0.0"
-  },
-  "peerDependencies": {
-    "@eslint/js": ">= 8",
-    "eslint": ">= 8",
+  "dependencies": {
+    "@eslint/js": "8.x",
+    "eslint-config-eslint": "8.x",
     "eslint-plugin-big-number-rules": "^2.2.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.x"
+  },
+  "peerDependencies": {
+    "eslint": "8.x"
   }
 }
