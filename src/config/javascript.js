@@ -4,7 +4,7 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 
 import rules from "./../rules/index.js";
 
-const ECMA_VERSION = 2021;
+const ECMA_VERSION = 2022;
 
 export default [
   js.configs.recommended,
@@ -45,6 +45,20 @@ export default [
           toAvoid: ["data"],
         },
       ],
+      "jsdoc/require-jsdoc": ["error", {
+        publicOnly: false,
+        require: {
+          FunctionExpression: true,
+          ArrowFunctionExpression: true,
+          FunctionDeclaration: true,
+          MethodDefinition: true,
+        },
+      }],
+      "jsdoc/require-description": "off",
+      "jsdoc/require-param-description": "off",
+      "jsdoc/require-property-description": "off",
+      "jsdoc/require-returns-description": "off",
+      "jsdoc/no-blank-block-descriptions": "error",
     },
   },
 ];
