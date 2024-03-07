@@ -17,10 +17,18 @@ export default {
       },
     ],
   },
+  /**
+   * @param {Array} context
+   * @returns {Object}
+   */
   create(context) {
     const [options] = context.options;
 
     return {
+      /**
+       * @param {any} node
+       * @returns {any}
+       */
       Identifier(node) {
         if (options.toAvoid.includes(node.name)) {
           context.report({

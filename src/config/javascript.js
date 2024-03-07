@@ -14,6 +14,11 @@ export default [
     languageOptions: {
       ecmaVersion: ECMA_VERSION,
       sourceType: "module",
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
     plugins: {
       iconicompany: rules,
@@ -45,15 +50,22 @@ export default [
           toAvoid: ["data"],
         },
       ],
-      "jsdoc/require-jsdoc": ["error", {
-        publicOnly: false,
-        require: {
-          FunctionExpression: true,
-          ArrowFunctionExpression: true,
-          FunctionDeclaration: true,
-          MethodDefinition: true,
+      "jsdoc/require-jsdoc": [
+        "error",
+        {
+          publicOnly: false,
+          require: {
+            FunctionExpression: true,
+            ArrowFunctionExpression: true,
+            FunctionDeclaration: true,
+            MethodDefinition: true,
+          },
         },
-      }],
+      ],
+      "jsdoc/check-access": "error",
+      "jsdoc/check-indentation": "error",
+      "jsdoc/check-types": "error",
+      "jsdoc/valid-types": "error",
       "jsdoc/require-description": "off",
       "jsdoc/require-param-description": "off",
       "jsdoc/require-property-description": "off",
