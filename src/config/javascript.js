@@ -50,6 +50,7 @@ export default [
           toAvoid: ["data"],
         },
       ],
+      "class-methods-use-this": "off",
       "jsdoc/require-jsdoc": [
         "error",
         {
